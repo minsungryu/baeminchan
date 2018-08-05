@@ -1,27 +1,18 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/baeminchan?useSSL=false
-    username: minsungryu
-    password: woowa
+
+  profiles:
+    active: local
 
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    show-sql: true
-    hibernate:
-      ddl-auto: create
 
 server:
   servlet:
     session:
       tracking-modes: cookie
-
-logging:
-  level:
-    org.hibernate:
-      - info
-      - type.descriptor.sql.BasicBinder: trace
 
 handlebars:
   suffix: .html
