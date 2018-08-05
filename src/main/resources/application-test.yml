@@ -11,6 +11,5 @@ jpa:
 
 logging:
   level:
-    org.hibernate:
-      - debug
-      - type.descriptor.sql.BasicBinder: trace
+    codesquad: DEBUG
+    org.hibernate: DEBUG
